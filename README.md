@@ -10,6 +10,7 @@ select team.name, count(*) as nb_student
      team.id=player.team_id
      group by team_id
      order by nb_student desc;
+     
 2)
 select team.name
      from player
@@ -19,6 +20,7 @@ select team.name
      team.id=player.team_id
      group by team_id
      having count(*)>=14;
+     
 3)
 select wizard.firstname, wizard.lastname, player.enrollment_date
      from player
